@@ -17,55 +17,5 @@ dependencies {
 group = POM_RETROFIT_GROUP
 version = POM_VERSION
 
-modifyPom {
-    project {
-        artifactId POM_RETROFIT_ARTIFACT_ID
-        name POM_RETROFIT_NAME
-        description POM_RETROFIT_DESCRIPTION
-        url POM_RETROFIT_URL
-
-        scm {
-            connection POM_RETROFIT_SCM_CONNECTION_URL
-            developerConnection POM_RETROFIT_SCM_CONNECTION_URL
-            url POM_RETROFIT_URL
-        }
-
-        licenses {
-            license {
-                name 'MIT License'
-                url 'https://opensource.org/licenses/MIT'
-                distribution 'repo'
-            }
-        }
-
-        developers {
-            developer {
-                id 'burnoo'
-                name 'Bruno Wieczorek'
-                email 'bruno.wieczorek@droidsonroids.pl'
-                roles {
-                    role 'developer'
-                }
-            }
-            developer {
-                id 'koral'
-                name 'Karol Wrótniak'
-                email 'karol.wrotniak@droidsonroids.pl'
-                roles {
-                    role 'developer'
-                }
-            }
-        }
-    }
-}
-
-task javadoc(type: Javadoc, overwrite: true) {
-    source = sourceSets.main.allJava
-    classpath += sourceSets.main.compileClasspath
-    options {
-        links "http://docs.oracle.com/javase/7/docs/api/"
-    }
-}
-
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
