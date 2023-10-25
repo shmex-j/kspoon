@@ -24,7 +24,7 @@ interface BlogService {
     fun getBlogPage(@Query("page") pageNumber: Int): Single<BlogPage>
 }
 
-fun main(args: Array<String>) {
+fun main() {
     createRetrofit()
             .create(BlogService::class.java)
             .getBlogPage(1)
