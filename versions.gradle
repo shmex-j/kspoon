@@ -11,7 +11,7 @@ ext {
             kotlin       : '1.8.10',
             mockito      : '2.20.1',
             mockwebserver: '3.11.0',
-            retrofit     : '2.4.0',
+            retrofit     : '2.5.0',
             support      : '27.1.1'
     ]
 }
