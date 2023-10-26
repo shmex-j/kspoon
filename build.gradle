@@ -2,7 +2,6 @@ buildscript {
     apply from: 'versions.gradle'
     repositories {
         mavenCentral()
-        jcenter()
         google()
     }
     dependencies {
@@ -12,10 +11,10 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
     }
 }
 
-task clean(type: Delete) {
+tasks.register('clean', Delete) {
     delete rootProject.buildDir
 }

@@ -2,16 +2,16 @@ ext {
     versions = [
             minSdkVersion: 23,
             sdkVersion   : 27,
-            androidPlugin: '3.1.3',
+            androidPlugin: '3.6.0',
             annotations  : '16.0.2',
             buildTools   : '27.0.3',
             constraint   : '1.1.2',
-            jsoup        : '1.11.3',
-            junit        : '4.12',
-            kotlin       : '1.2.60',
+            jsoup        : '1.15.3',
+            junit        : '4.13.1',
+            kotlin       : '1.8.10',
             mockito      : '2.20.1',
             mockwebserver: '3.11.0',
-            retrofit     : '2.4.0',
+            retrofit     : '2.5.0',
             support      : '27.1.1'
     ]
 }

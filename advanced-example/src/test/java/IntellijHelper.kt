@@ -10,6 +10,6 @@ class IntellijHelper {
 
     @Test
     fun runKotlin() {
-        main(arrayOf())
+        main()
     }
 }
