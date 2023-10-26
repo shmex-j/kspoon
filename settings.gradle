@@ -1,5 +1,5 @@
 include ':jspoon', ':retrofit-converter-jspoon', ':advanced-example'
-if (findSdkLocation(getRootDir()) != null) include ":android-example"
+//if (findSdkLocation(getRootDir()) != null) include ":android-example"
 
 private static def findSdkLocation(File rootDir) {
     def localProperty = readLocalProperties(rootDir)
